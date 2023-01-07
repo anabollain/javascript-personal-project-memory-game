@@ -44,8 +44,9 @@ Once you flip a card, an illustration will show up, your goal will be to find th
 
 ![My Image](./images/site-flipped.JPG)
 
-![check-illustrations](https://user-images.githubusercontent.com/104984166/211151642-42fa4c7f-2c84-40ad-8172-eca93ad019fd.png)
+* [check-illustrations](https://user-images.githubusercontent.com/104984166/211151642-42fa4c7f-2c84-40ad-8172-eca93ad019fd.png)
 
 ## Credits
+
 * [learn-javascript-by-building-games](https://www.freecodecamp.org/news/learn-javascript-by-building-7-games-video-course/)
 
