@@ -32,7 +32,7 @@ If you want to restart the game, you can do so by clicking the Restart button.
 
 You will find below some images of each state of the application, as well as some additional information of each one:
 
-![My Image](./images/site.JPG)
+![My Image](images/site.JPG)
 
 *With:*
 *- The game board*
@@ -42,9 +42,9 @@ You will find below some images of each state of the application, as well as som
 
 Once you flip a card, an illustration will show up, your goal will be to find the matching card. The illustrations used in the project can be found in the link below:
 
-![My Image](./images/site-flipped.JPG)
+![My Image](images/site-flipped.JPG)
 
-* [check-illustrations](https://user-images.githubusercontent.com/104984166/211151642-42fa4c7f-2c84-40ad-8172-eca93ad019fd.png)
+* [check-illustrations](https://icons8.com/illustrations/style--rush-1)
 
 ## Credits
 
