@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-.page__header--nav{
+.page__header--nav {
     /*General properties*/
     list-style: none;
     /*Display*/
@@ -34,15 +34,20 @@
     padding: 10px 15px 10px 15px;
 }
 
-.page__header--link:hover{
+.page__header--link:hover {
     /*General properties*/
+    color: #ffdb53;
     animation-play-state: paused;
 }
 
-.highlight{
+.highlight {
     animation: highlight 1s linear 1s infinite alternate;
     background-color: #ffdb53;
     border-radius: 20px;
+}
+
+.highlight:hover {
+    color: black;
 }
 
 @keyframes highlight {
@@ -50,9 +55,15 @@
     to {background-color: #ffdb53;}
 }
 
-.page__header--title{
+.page__header--title {
     /*General properties*/
+    cursor: pointer;
     font-size: 24px;
+    text-decoration: none;
+}
+
+.page__header--title:hover {
+    color: #ffdb53;
 }
 
 /*Main*/
@@ -85,17 +96,17 @@
     padding: 4px;
 }
 
-.card:hover{
+.card:hover {
     /*General properties*/
     opacity: 80%;
 }
 
-.memo__main--text{
+.memo__main--text {
     /*General properties*/
     font-size: 14px;
 }
 
-.memo__main--btn{
+.memo__main--btn {
     /*General properties*/
     cursor: pointer;
     text-decoration: none;
@@ -114,7 +125,7 @@
     font-size: 14px;
 }
 
-.memo__main--btn:hover{
+.memo__main--btn:hover {
     /*General properties*/
     border: 1px solid #ffdb53;
     background-color: transparent;
@@ -123,7 +134,7 @@
 
 /*ABOUT*/
 
-.about__main{
+.about__main { 
     /*General properties*/
     height: 90vh;
     /*Display*/
@@ -133,22 +144,22 @@
     gap: 30px;
 }
 
-.hero{
+.hero {
     text-align: center;
     width: 50%;
 }
 
-.hero__title{
+.hero__title {
     font-size: 22px;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.hero__desc{
+.hero__desc {
     font-size: 16px;
 }
 
-.sports__list{
+.sports__list {
     /*General properties*/
     list-style: none;
     /*Display*/
@@ -158,7 +169,7 @@
     gap: 30px;
 }
 
-.sports__list--article{
+.sports__list--article {
     /*General properties*/
     cursor: pointer;
     width: 200px;
@@ -166,7 +177,7 @@
     position: relative;
 }
 
-.list__article--icon{
+.list__article--icon {
     cursor: pointer;
     font-size: 14px;
     padding: 10px;
@@ -176,12 +187,12 @@
     transition: all 0.2s;
 }
 
-.list__article--icon:hover{
+.list__article--icon:hover {
     color: #ffdb53;
     transform: scale(120%);
 }
 
-.list__article--img{
+.list__article--img {
     height: 50%;
     width: auto;
     object-fit: cover;
@@ -189,18 +200,18 @@
     transition: all 0.5s;
 }
 
-.list__article--img:hover{
+.list__article--img:hover {
     transform: translateX(-15%) scale(125%); 
 }
 
-.list__article--title{
+.list__article--title {
     font-size: 18px;
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
 }
 
-.list__article--desc{
+.list__article--desc {
     font-size: 13px;
     width: 80%;
 }
