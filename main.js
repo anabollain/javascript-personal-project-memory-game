@@ -21,51 +21,51 @@ let userMoves = 0;
 const cardArray = [
     {
         name: '1',
-        img: './images/image01.jpg',
+        img: './images/01.jpg',
     },
     {
         name: '2',
-        img: './images/image02.jpg',
+        img: './images/02.jpg',
     },
     {
         name: '3',
-        img: './images/image03.jpg',
+        img: './images/03.jpg',
     },
     {
         name: '4',
-        img: './images/image04.jpg',
+        img: './images/04.jpg',
     },
     {
         name: '5',
-        img: './images/image05.jpg',
+        img: './images/05.jpg',
     },
     {
         name: '6',
-        img: './images/image06.jpg',
+        img: './images/06.jpg',
     },
     {
         name: '1',
-        img: './images/image01.jpg',
+        img: './images/01.jpg',
     },
     {
         name: '2',
-        img: './images/image02.jpg',
+        img: './images/02.jpg',
     },
     {
         name: '3',
-        img: './images/image03.jpg',
+        img: './images/03.jpg',
     },
     {
         name: '4',
-        img: './images/image04.jpg',
+        img: './images/04.jpg',
     },
     {
         name: '5',
-        img: './images/image05.jpg',
+        img: './images/05.jpg',
     },
     {
         name: '6',
-        img: './images/image06.jpg',
+        img: './images/06.jpg',
     },
 ];
 

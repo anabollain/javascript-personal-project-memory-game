@@ -10,45 +10,75 @@
 
 /*Header*/
 .page__header {
+    /*General properties*/
     height: 10vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    /*Display*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+}
+
+.page__header--nav{
+    /*General properties*/
+    list-style: none;
+    /*Display*/
+    display: flex;
+    gap: 50px;
 }
 
 .page__header--link {
+    /*General properties*/
     text-decoration: none;
+    padding: 10px 15px 10px 15px;
+}
+
+.page__header--link:hover{
+    /*General properties*/
+    animation-play-state: paused;
+}
+
+.highlight{
+    animation: highlight 1s linear 1s infinite alternate;
+    background-color: #ffdb53;
+    border-radius: 20px;
+}
+
+@keyframes highlight {
+    from {background-color: transparent;}
+    to {background-color: #ffdb53;}
 }
 
 .page__header--title{
+    /*General properties*/
     font-size: 24px;
-}
-
-.page__header--title:hover{
-    color: #ffdb53;
 }
 
 /*Main*/
 .memo__main {
+    /*General properties*/
     height: 90vh;
+    gap: 10px;
+    font-size: 16px;
+    /*Display*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    font-size: 16px;
 }
 
 .memo__main--grid {
+    /*General properties*/
+    max-width: 600px;
+    max-height: 450px;
+    /*Display*/
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
-    height: 450px;
 }
 
 .card {
+    /*General properties*/
     cursor: pointer;
     width: 150px;
     height: 150px;
@@ -56,14 +86,17 @@
 }
 
 .card:hover{
+    /*General properties*/
     opacity: 80%;
 }
 
 .memo__main--text{
+    /*General properties*/
     font-size: 14px;
 }
 
 .memo__main--btn{
+    /*General properties*/
     cursor: pointer;
     text-decoration: none;
     width: 100px;
@@ -74,6 +107,7 @@
     color: white;
     padding: 15px 10px 15px 10px;
     margin-top: 10px;
+    /*Display*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +115,92 @@
 }
 
 .memo__main--btn:hover{
+    /*General properties*/
     border: 1px solid #ffdb53;
     background-color: transparent;
     color: #ffdb53;
+}
+
+/*ABOUT*/
+
+.about__main{
+    /*General properties*/
+    height: 90vh;
+    /*Display*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero{
+    text-align: center;
+    width: 50%;
+}
+
+.hero__title{
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.hero__desc{
+    font-size: 16px;
+}
+
+.sports__list{
+    /*General properties*/
+    list-style: none;
+    /*Display*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.sports__list--article{
+    /*General properties*/
+    cursor: pointer;
+    width: 200px;
+    height: 430px;
+    position: relative;
+}
+
+.list__article--icon{
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    transition: all 0.2s;
+}
+
+.list__article--icon:hover{
+    color: #ffdb53;
+    transform: scale(120%);
+}
+
+.list__article--img{
+    height: 50%;
+    width: auto;
+    object-fit: cover;
+    transform: translateX(-15%);
+    transition: all 0.5s;
+}
+
+.list__article--img:hover{
+    transform: translateX(-15%) scale(125%); 
+}
+
+.list__article--title{
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.list__article--desc{
+    font-size: 13px;
+    width: 80%;
 }
