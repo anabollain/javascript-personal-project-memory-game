@@ -7,8 +7,6 @@ const grid = document.querySelector('.js-memo-grid');
 const resultDisplay = document.querySelector('.js-memo-result');
 //Movements
 const numMoves = document.querySelector('.js-memo-moves')
-//Restart button
-//const restartBtn = document.querySelector('.js-re-btn');
 
 //VARIABLES
 //Chosen cards array
@@ -20,51 +18,51 @@ let userMoves = 0;
 //Cards
 const cardArray = [
     {
-        name: '1',
+        name: 'harri',
         img: './images/01.jpg',
     },
     {
-        name: '2',
+        name: 'aizkora',
         img: './images/02.jpg',
     },
     {
-        name: '3',
+        name: 'zesta',
         img: './images/03.jpg',
     },
     {
-        name: '4',
+        name: 'pilota',
         img: './images/04.jpg',
     },
     {
-        name: '5',
+        name: 'txinga',
         img: './images/05.jpg',
     },
     {
-        name: '6',
+        name: 'soka',
         img: './images/06.jpg',
     },
     {
-        name: '1',
+        name: 'harri',
         img: './images/01.jpg',
     },
     {
-        name: '2',
+        name: 'aizkora',
         img: './images/02.jpg',
     },
     {
-        name: '3',
+        name: 'zesta',
         img: './images/03.jpg',
     },
     {
-        name: '4',
+        name: 'pilota',
         img: './images/04.jpg',
     },
     {
-        name: '5',
+        name: 'txinga',
         img: './images/05.jpg',
     },
     {
-        name: '6',
+        name: 'soka',
         img: './images/06.jpg',
     },
 ];
@@ -94,12 +92,7 @@ function checkForMatch() {
     const optionOneId = cardsChosenId[0];
     //Second value in the array
     const optionTwoId = cardsChosenId[1];
-    if (optionOneId === optionTwoId) {
-        cards[optionOneId].setAttribute('src', './images/back.jpg');
-        cards[optionTwoId].setAttribute('src', './images/back.jpg');
-        //alert('You have clicked the same image');
-        userMoves++;
-    } else if (cardsChosen[0] === cardsChosen[1]) {
+    if (cardsChosen[0] === cardsChosen[1]) {
         //alert('You found a match')
         cards[optionOneId].setAttribute('src', './images/blank.jpg');
         cards[optionTwoId].setAttribute('src', './images/blank.jpg');
@@ -108,9 +101,9 @@ function checkForMatch() {
         cardsWon.push(cardsChosen);
         userMoves++;
     } else {
+        //alert('Sorry, try again');
         cards[optionOneId].setAttribute('src', './images/back.jpg');
         cards[optionTwoId].setAttribute('src', './images/back.jpg');
-        //alert('Sorry, try again');
         userMoves++;
     }
     cardsChosen = [];
@@ -126,13 +119,19 @@ function checkForMatch() {
 function flipCard() {
     //Get id from clicked card, it matches its index
     let cardId = this.getAttribute('data-id');
-    //Add chosen card name to the array, using the index = cardId
-    cardsChosen.push(cardArray[cardId].name);
-    //Add chosen card id to the array
-    cardsChosenId.push(cardId);
-    //Add image responding to the chosen card
-    this.setAttribute('src', cardArray[cardId].img);
-    if (cardsChosen.length === 2) {
-        setTimeout(checkForMatch, 300);
+    if(cardsChosenId.indexOf(cardId) === -1 && cardsChosenId.length < 2){
+        //Add image responding to the chosen card
+        this.setAttribute('src', cardArray[cardId].img);
+        //Add chosen card id to the array
+        cardsChosenId.push(cardId);
+        //Add chosen card name to the array, using the index = cardId
+        cardsChosen.push(cardArray[cardId].name);
+        if (cardsChosen.length === 2) {
+            setTimeout(checkForMatch, 400);
+        }
+    }else if(cardsChosenId.indexOf(cardId) !== -1){
+        //alert('You've clicked the same card');
+    }else{
+        //alert('Wait until the match has been checked');
     }
 }
