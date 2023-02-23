@@ -28,6 +28,17 @@ If you want to restart the game, you can do so by clicking the Restart button.
 * To work with with loops
 * To practice CSS transitions to improve the user's experience
 
+
+## Personal insight
+
+I noticed that the user was able to flip over more than 2 cards due to the time delay (`setTimeOut()`) in the match verification process. This resulted in  having some cards flipped over indefinitely, disrupting the logic of the game. 
+
+In order to solve this bug, I have changed the event handler function associated with the click event, adding some verifications:
+
+* If the user clicks twice the same card, nothing happens. It will not add up to the counter, the user will have to choose another card to continue playing
+
+* If two cards have already been clicked, the user will have to wait until the match has been checked to continue playing
+
 ## Web Application
 
 You will find below some images of each state of the application, as well as some additional information of each one:
