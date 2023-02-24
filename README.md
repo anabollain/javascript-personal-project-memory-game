@@ -53,7 +53,7 @@ You will find below some images of each state of the application, as well as som
 
 Once you flip a card, an illustration will show up, your goal will be to find the matching card. The illustrations used in the project can be found in the link below:
 
-![My Image](images/site-flipped.JPG)
+![My Image](images/site-flipped-over.JPG)
 
 Don't hesitate to check the Discover section, where you'll be able to learn about Basque traditional sports:
 
