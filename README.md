@@ -10,7 +10,7 @@ Each turn:
 
 * A player flips one card over to reveal its underlying illustration
 * The player turns over a second card, trying to find the one that matches the same illustration
-* If the cards match, that's one point for you and both cards will dissapear from the game board
+* If the cards match, that's one point for you and both cards will disappear from the game board
 * If the cards do not match, both cards are returned to their initial hidden state
 
 The game ends once all cards have been correctly matched.
@@ -21,7 +21,7 @@ If you want to restart the game, you can do so by clicking the Restart button.
 
 ## What I've learned
 
-* To fully combine HTLM5, CSS3 and Javascript into a project
+* To fully combine HTML5, CSS3 and Javascript into a project
 * To work with empty arrays, as well as pushing and storing data in them
 * To practice Advanced DOM (setAttribute, createElement, appendChild)
 * To use inbuilt JavaScript functions such as Math.random and sort()
@@ -55,7 +55,9 @@ Once you flip a card, an illustration will show up, your goal will be to find th
 
 ![My Image](images/site-flipped.JPG)
 
-* [check-illustrations](https://icons8.com/illustrations/style--rush-1)
+Don't hesitate to check the Discover section, where you'll be able to learn about Basque traditional sports:
+
+![My Image](images/site-sports.JPG)
 
 ## Credits
 
