@@ -11,20 +11,42 @@
 /*Header*/
 .page__header {
     /*General properties*/
-    height: 10vh;
-    padding-left: 30px;
-    padding-right: 30px;
+    height: 8vh;
+    width: 100vw;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+    /*Position*/
+    position: fixed;
+    z-index: 10;
     /*Display*/
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.page__header--icon {
+    /*General properties*/
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+}
+
 .page__header--nav {
     /*General properties*/
     list-style: none;
+    background-color: white;
+    width: 100vw;
+    height: 92vh;
+    /*Position*/
+    position: absolute;
+    top: 8vh;
+    right: 0;
     /*Display*/
+    display: none;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 50px;
 }
 
@@ -34,31 +56,10 @@
     padding: 10px 15px 10px 15px;
 }
 
-.page__header--link:hover {
-    /*General properties*/
-    color: #ffdb53;
-    animation-play-state: paused;
-}
-
-.highlight {
-    animation: highlight 1s linear 1s infinite alternate;
-    background-color: #ffdb53;
-    border-radius: 20px;
-}
-
-.highlight:hover {
-    color: black;
-}
-
-@keyframes highlight {
-    from {background-color: transparent;}
-    to {background-color: #ffdb53;}
-}
-
 .page__header--title {
     /*General properties*/
     cursor: pointer;
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -69,7 +70,8 @@
 /*Main*/
 .memo__main {
     /*General properties*/
-    height: 90vh;
+    height: 92vh;
+    width: 100vw;
     gap: 10px;
     font-size: 16px;
     /*Display*/
@@ -80,20 +82,21 @@
 }
 
 .memo__main--grid {
-    /*General properties*/
-    max-width: 600px;
-    max-height: 450px;
+    width: 100%;
+    margin-top: 10vh;
     /*Display*/
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     /*General properties*/
     cursor: pointer;
-    width: 150px;
-    height: 150px;
-    padding: 4px;
+    width: 110px;
+    height: 110px;
+    padding: 2px;
 }
 
 .card:hover {
@@ -145,17 +148,21 @@
 }
 
 .hero {
+    /*General properties*/
+    margin-top: 10vh;
     text-align: center;
     width: 50%;
 }
 
 .hero__title {
+    /*General properties*/
     font-size: 22px;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
 .hero__desc {
+    /*General properties*/
     font-size: 16px;
 }
 
@@ -164,9 +171,11 @@
     list-style: none;
     /*Display*/
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-bottom: 40px
 }
 
 .sports__list--article {
@@ -214,4 +223,87 @@
 .list__article--desc {
     font-size: 13px;
     width: 80%;
+}
+
+.js-hidden{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    /*LANDING*/
+    /*Header*/
+    .page__header {
+        /*General properties*/
+        height: 10vh;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .page__header--icon {
+        /*General properties*/
+        display: none;
+    }
+
+    .page__header--nav {
+        /*General properties*/
+        height: 10vh;
+        width: 24vw;
+        /*Position*/
+        top: 0;
+        /*Display*/
+        display: flex;
+        flex-direction: row;
+    }
+
+    .page__header--link:hover {
+        /*General properties*/
+        color: #ffdb53;
+        animation-play-state: paused;
+    }
+
+    .highlight {
+        animation: highlight 1s linear 1s infinite alternate;
+        background-color: #ffdb53;
+        border-radius: 20px;
+    }
+    
+    .highlight:hover {
+        color: black;
+    }
+    
+    @keyframes highlight {
+        from {background-color: transparent;}
+        to {background-color: #ffdb53;}
+    }
+
+    /*Main*/
+    .memo__main {
+        /*General properties*/
+        height: 90vh;
+    }
+
+    .memo__main--grid {
+        /*General properties*/
+        margin-top: 15vh;
+        max-width: 600px;
+        max-height: 450px;
+        /*Display*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        /*General properties*/
+        width: 150px;
+        height: 150px;
+        padding: 4px;
+    }
+
+    /*ABOUT*/
+    .sports__list {
+        /*Display*/
+        flex-direction: row;
+    }
+
+
 }

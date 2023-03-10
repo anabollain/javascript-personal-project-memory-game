@@ -7,6 +7,10 @@ const grid = document.querySelector('.js-memo-grid');
 const resultDisplay = document.querySelector('.js-memo-result');
 //Movements
 const numMoves = document.querySelector('.js-memo-moves')
+//Nav icon
+const navIcon = document.querySelector('.js-nav-icon');
+//Nav menu
+const navMenu = document.querySelector('.js-nav-menu');
 
 //VARIABLES
 //Chosen cards array
@@ -135,3 +139,11 @@ function flipCard() {
         //alert('Wait until the match has been checked');
     }
 }
+
+//EVENT HANDLERS
+function handleNavIconClick() {
+    navMenu.classList.toggle('js-hidden');
+}
+
+//EVENT LISTENERS
+navIcon.addEventListener('click', handleNavIconClick);
